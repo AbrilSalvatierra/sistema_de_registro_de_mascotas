@@ -1,1 +1,7 @@
-body{background-color: aquamarine;}
+body{
+    background-color: aquamarine;
+}
+
+#main_logo{
+    width: 5%;
+}
