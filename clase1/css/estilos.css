@@ -1,7 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     background-color: #fffff4;
 }
 
 #main_logo{
     width: 5%;
+}
+.main_banner{
+    width: 100%;
+    height: auto;
 }
