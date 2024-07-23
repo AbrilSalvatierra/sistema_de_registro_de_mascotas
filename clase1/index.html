@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Registro de Mascotas</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');</style>
 </head>
@@ -24,16 +25,37 @@
 <!-- Ctrl + k + c = comentario-->
             <!-- Ctrl + k + u = descomentar-->
     <main>
-        <img class="main_banner" src="assets/main_banner.png" alt="banner registro y reporte de mascotas">
-        <h1>Proyecto en construcción</h1>
-        <p>Con este sitio web totalmente gratuito no solo se busca brindar un servicio de publicación de perros perdidos y encontrados, se busca que sea una herramienta para generar encuentros entre mascotas perdidas y sus respectivos dueños.</p>
+        <section>
+            <img class="main_banner" src="assets/main_banner.png" alt="banner registro y reporte de mascotas">
+            <h1>Ayudanos a generar encuentros</h1>
+            <div class="container-btn">
+                <a href="pages/registro.html" class="button">Registra una Mascota Perdida</a>
+                <a href="pages/reporte.html" class="button">Reporta una Mascota Encontrada</a>
+            </div>
+        </section>
+        <h2>Proyecto en construcción</h2>
+        <p>Con este sitio web totalmente gratuito no solo se busca brindar un servicio de publicación de perros perdidos y encontrados, se busca <br>que sea una herramienta para generar encuentros entre mascotas perdidas y sus respectivos dueños.</p>
         <p>Horas y horas navegan en páginas de internet aquellas familias que pasan por la desgracia de haber extraviado a su mascota.<br>Algunas van más allá y hasta empapelan el barrio con la foto del perrito o gatito, con la esperanza de dar con su paradero.</p>
     </main>
 
-    <footer>
-        
-        <p>Terminos y condiciones</p>
-        
+    <footer class="container">
+        <div >
+            <p>Enlaces Rapidos</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/registro.html" target="_blank">Registro</a></li>
+                <li><a href="pages/reporte.html" target="_blank">Reporte</a></li>
+                <li><a href="pages/buscador.html">Buscar</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>  
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="https://facebook.com" alt="Facebook" target="_blank"></a>
+            <a href="#"><img src="https://instagram.com" alt="Instagram" target="_blank"></a>
+            <a href="#"><img src="https://x.com" alt="X" target="_blank"></a>
+        </div>
+        <p>&copy; 2024 Registro de Mascotas Perdidas</p>
     </footer>
+
 </body>
 </html>
