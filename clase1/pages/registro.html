@@ -22,6 +22,49 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Registra una Mascota Perdida</h1>
+            <form action="#" method="post">
+                <label for="name">Nombre de la Mascota:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="type">Tipo de Mascota:</label>
+                <select id="type" name="type" required>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                </select>
+
+                <label for="breed">Raza:</label>
+                <input type="text" id="breed" name="breed">
+
+                <label for="size">Tamaño:</label>
+                <input type="text" id="size" name="size">
+
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color">
+
+                <label for="photo">Fotos (minimo 3):</label>
+                <input type="file" id="photo" name="photo">
+
+                <label for="description">Descripción:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="location">Última Ubicación Vista:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="date">Fecha y Hora de la Desaparición:</label>
+                <input type="datetime-local" id="date" name="date" required>
+
+                <label for="contact">Información de Contacto del Dueño:</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <button type="submit">Registrar Mascota Perdida</button>
+            </form>
+        </section>
+    </main>
+
     <footer class="container">
         <div >
             <p>Enlaces Rapidos</p>

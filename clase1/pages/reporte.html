@@ -23,6 +23,50 @@
         </nav>
     </header>
 
+    <main>
+        <section>
+            <form id="report-form">
+                <label for="pet-type">Tipo de Mascota</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                </select>
+    
+                <label for="pet-breed">Raza</label>
+                <input type="text" id="pet-breed" name="pet-breed" required>
+    
+                <label for="pet-size">Tamaño</label>
+                <input type="text" id="pet-size" name="pet-size" required>
+    
+                <label for="pet-color">Color</label>
+                <input type="text" id="pet-color" name="pet-color" required>
+    
+                <label for="pet-photo">Fotos (minimo 3):</label>
+                <input type="file" id="pet-photo" name="pet-photo" required>
+    
+                <label for="pet-description">Descripción</label>
+                <textarea id="pet-description" name="pet-description" required></textarea>
+    
+                <label for="found-location">Ubicación Encontrada</label>
+                <input type="text" id="found-location" name="found-location" required>
+    
+                <label for="found-date">Fecha y Hora Encontrada</label>
+                <input type="datetime-local" id="found-date" name="found-date" required>
+    
+                <label for="reporter-name">Nombre del Reportante</label>
+                <input type="text" id="reporter-name" name="reporter-name" required>
+    
+                <label for="reporter-phone">Teléfono del Reportante</label>
+                <input type="tel" id="reporter-phone" name="reporter-phone" required>
+    
+                <label for="reporter-email">Email del Reportante</label>
+                <input type="email" id="reporter-email" name="reporter-email" required>
+    
+                <button type="submit">Reportar Mascota Encontrada</button>
+            </form>
+        </section>
+    </main>
+
     <footer class="container">
         <div >
             <p>Enlaces Rapidos</p>
