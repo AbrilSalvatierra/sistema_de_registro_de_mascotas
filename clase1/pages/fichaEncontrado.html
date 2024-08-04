@@ -6,7 +6,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');</style>
-    <title>Registro</title>
+    <title>Ficha Completa</title>
 </head>
 <body class="dm-sans-fuente">
     <header>
@@ -19,7 +19,7 @@
                 <div>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="registro.html" target="_blank">Registro</a></li>
                         <li><a href="reporte.html" target="_blank">Reporte</a></li>
                         <li><a href="buscador.html">Buscar</a></li>
                         <li><a href="nosotros.html">Nosotres</a></li>
@@ -32,54 +32,40 @@
     </header>
 
     <main>
-        <section>
+        <section id="details">
             <div>
                 <div>
-                    <img src="" alt="">
+                    <img id="img-mascota" src="" alt="Mascota">
+                    <img id="img-mascota" src="../assets/sticker.png" alt="Mascota">
+                    <img id="img-mascota" src="" alt="Mascota">
                 </div>
-                <h1>Titulo</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor hic obcaecati sequi qui magnam ipsum, sit porro, recusandae fuga nostrum tempora veritatis sint, non molestias! Harum provident repudiandae nostrum maiores.</p>
+                <div>    
+                    <p><strong>Tipo:</strong> Perro</p>
+                    <p><strong>Raza:</strong> Ovejero Aleman</p>
+                    <p><strong>Tamaño:</strong> Grande</p>
+                    <p><strong>Color:</strong> Negro</p>
+                    <p><strong>Descripción:</strong> Descripción detallada de la mascota y como la encontro.</p>
+                    <p><strong>Ubicación Encontrada:</strong> Dirección</p>
+                    <p><strong>Fecha y Hora Encontrada:</strong> 20/06/2024 11:00</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="" alt="contacto">
+                    </div>
+                    <div>
+                        <div>                     
+                            <h2>Contacto del Reportante</h2>
+                            <p><strong>Nombre del Reportante:</strong>Juan Doe</p>
+                            <p><strong>Teléfono del Reportante:</strong>1547727485</p>
+                            <p><strong>Email del Reportante:</strong>juan_doe@gmail.com</p>
+                            <p><strong>Redes del Reportante:</strong>JuanDoe.insta</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button>Contactar al Reportante</button>
+                </div>
             </div>
-        </section>
-        <section class="form-section">
-            <h1>Registra una Mascota Perdida</h1>
-            <form action="#" method="post">
-                <label for="name">Nombre de la Mascota:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="type">Tipo de Mascota:</label>
-                <select id="type" name="type" required>
-                    <option value="perro">Perro</option>
-                    <option value="gato">Gato</option>
-                </select>
-
-                <label for="breed">Raza:</label>
-                <input type="text" id="breed" name="breed">
-
-                <label for="size">Tamaño:</label>
-                <input type="text" id="size" name="size">
-
-                <label for="color">Color:</label>
-                <input type="text" id="color" name="color">
-
-                <label for="photo">Fotos (minimo 3):</label>
-                <input type="file" id="photo" name="photo">
-
-                <label for="description">Descripción:</label>
-                <textarea id="description" name="description" required></textarea>
-
-                <label for="location">Última Ubicación Vista:</label>
-                <input type="text" id="location" name="location" required>
-
-                <label for="date">Fecha y Hora de la Desaparición:</label>
-                <input type="datetime-local" id="date" name="date" required>
-
-                <label for="contact">Información de Contacto del Dueño:</label>
-                <input type="text" id="contact" name="contact" required>
-
-                <button class="button" type="submit">Registrar Mascota Perdida</button>
-                <button type="submit">Compartir en redes</button>
-            </form>
         </section>
     </main>
 
