@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Registro de Mascotas</title>
+    <title>Rastro Peludo</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Merriweather+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 </head>
 <body class="dm-sans-fuente">
     <header>
         <nav class="container">
             <div>
-                <div>
-                    <img id="main_logo" src="assets/logo.svg" alt="logo" >
-                    <h1>Registro y Reporte de Mascotas</h1>
+                <div class="nav-container">
+                    <div>
+                        <a href="index.html" class="logo">
+                            <img id="img-logo" src="assets/RP_logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="buscador">
+                        <a class="lupa" href="pages/buscador.html"><i class="bi bi-search"></i></a>
+                    </div>
                 </div>
                 <div class="menu-container">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="pages/registro.html" target="_blank">Registro</a></li>
                         <li><a href="pages/reporte.html" target="_blank">Reporte</a></li>
-                        <li><a href="pages/buscador.html">Buscar</a></li>
                         <li><a href="pages/nosotros.html">Nosotres</a></li>
                         <li><a href="pages/comunidad.html">Comunidad</a></li>
                         <li><a href="pages/contacto.html">Contacto</a></li>  
@@ -36,12 +45,12 @@
     
     <main>
         <section>
-           <div> 
-                <img class="main_banner" src="assets/main_banner.png" alt="banner registro y reporte de mascotas">
-                <h1>Ayudanos a generar encuentros</h1>
+           <div class="banner"> 
+                <img class="main_banner" src="assets/Banner3.png" alt="banner registro y reporte de mascotas">
             </div>
             <div>
                 <div class="container-btn">
+                    <h1>Ayudemos a reunir a las familias con sus mascotas</h1>
                     <a href="pages/registro.html" class="button">Registra una Mascota Perdida</a>
                     <p>Completa el formulario para que los datos de tu mascota sean visibles y las personas puedan ayudar a encontrarlos</p>
                 </div>
@@ -73,7 +82,7 @@
 
         <section>
             <div>
-                <img src="assets/elemento.webp" alt="Croquetas de mascotas">
+                <img src="assets/elemento.webp" alt="Croquetas de mascotas" class="img-mascota">
                 <h2>Que nadie falte en casa</h2>
                 <p>Horas y horas navegan en páginas de internet aquellas familias que pasan por la desgracia de haber extraviado a su mascota.<br>Algunas van más allá y hasta empapelan el barrio con la foto del perrito o gatito, con la esperanza de dar con su paradero.</p>
             </div>
@@ -87,7 +96,7 @@
 
     <footer class="container">
         <div>
-            <img src="assets/logo.svg" alt="logo">
+            <img src="assets/logo.svg" alt="logo" class="main_logo">
             <div >
                 <p>Enlaces Rapidos</p>
                 <ul>

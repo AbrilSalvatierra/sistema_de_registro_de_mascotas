@@ -4,32 +4,79 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "DM Sans", sans-serif;
 }
-.dm-sans-fuente{
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
 
 body{
     background-color: #fcfcfa;
 }
 
 header{
-  background-color: #fffff4;
-  border-bottom: 2px solid #80802e;
-  padding: 10px 0;
-  margin: auto;
+  background-color: #fffbf6;
 }
 
 .container{
+  width: auto;
+}
+
+.logo{
   display: flex;
   justify-content: center;
 }
 
-#main_logo{
-  width: 5%;
+.main_logo{
+  width: 10%;
+}
+
+#img-logo{
+  width: 40%;
+}
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.buscador a{
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-container{
+  width: auto;  
+  padding: 10px;
+  background-color: #A0D3D9;
+}
+
+.menu-container ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-container ul li a{
+  font-size: 1rem;
+  color: #010406;
+  transition: 1s;
+}
+
+.menu-container ul li a:hover{
+  font-size: 1.1rem;
+  color: #1c2f40;
+}
+
+.menu-container ul li a:hover::after {
+  width: 100%;
+}
+
+.buscador a:hover {
+  background-color: #1C2F40;
+  color: #fffff4;
+}
+
+.lupa{
+  font-size: 2rem;
+  color:#010406;
 }
 
 .main_banner{
@@ -59,6 +106,6 @@ footer{
   padding: 10px 0;
 }
 
-#img-mascota{
+.img-mascota{
   width: 25%;
 }
