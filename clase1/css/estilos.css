@@ -15,10 +15,6 @@ header{
   background-color: #fffbf6;
 }
 
-.container{
-  width: auto;
-}
-
 .logo{
   display: flex;
   justify-content: center;
@@ -52,17 +48,19 @@ header{
 .menu-container ul{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .menu-container ul li a{
   font-size: 1rem;
   color: #010406;
-  transition: 1s;
+  transition: 1ms ;
 }
 
 .menu-container ul li a:hover{
-  font-size: 1.1rem;
-  color: #1c2f40;
+  font-size: 1.2rem;
+  color: #010406;
+  font-weight:500;
 }
 
 .menu-container ul li a:hover::after {
@@ -70,7 +68,7 @@ header{
 }
 
 .buscador a:hover {
-  background-color: #1C2F40;
+  background-color: #1c2f40;
   color: #fffff4;
 }
 
@@ -84,26 +82,45 @@ header{
   height: auto;
 }
 
-.container-btn{
-  margin: 10px;
+footer{
+  background-color: #A0D3D9;
+  color: #010406;
+  text-decoration: none;
+  border-top: 1px solid #1c2f405c;
+}
+
+.footer-container{
   display: flex;
   justify-content: space-evenly;
+  padding: 2em;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
-.button{
-  padding: 10px 20px;
-  background-color: #474641;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+.footer-container ul li a {
+  color: #010406;
+  text-decoration: none;
 }
 
-footer{
-  background-color: #4d4d4d;
-  color: #fcfcfa;
-  text-align: center;
+.text-footer{
+  font-size: 1.5rem;
   padding: 10px 0;
+  font-family: "Merriweather Sans", system-ui;
+  font-weight: 600;
+}
+
+.redes-sociales{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+
+.fusion-row{
+  display: flex;
+  justify-content: center;
+  background-color: #1C2F40;
+  color: #fffff4;
+  padding: 1em;
 }
 
 .img-mascota{
