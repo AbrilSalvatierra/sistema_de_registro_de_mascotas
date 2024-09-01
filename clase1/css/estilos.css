@@ -11,6 +11,8 @@ body{
     background-color: #fcfcfa;
 }
 
+/* Navbar */
+
 header{
   background-color: #fffbf6;
 }
@@ -49,6 +51,8 @@ header{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .menu-container ul li a{
@@ -77,10 +81,84 @@ header{
   color:#010406;
 }
 
+/* Main Section */
+
 .main_banner{
   width: 100%;
   height: auto;
 }
+
+.background-blue{
+  background-color: #fff6ea;
+  padding-bottom: 2em;
+}
+
+section div{
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h1, main h2 {
+  padding: 2em 0;
+  text-align: center;
+  color: #010406;
+  font-size: 1.7em;
+}
+
+.button-pages{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.button-primary{
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  background-color: #1C2F40;
+  color: #fcfcfa;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0;
+  font-size: 1.3em;
+  transition: box-shadow 1ms;
+}
+
+.button-primary:hover{
+  box-shadow: 0 0 30px 2px #1c2f4046;
+  background-color: #fcfcfa;
+  color: #1C2F40;
+  font-weight: 600;
+}
+
+.card-button{
+  width: 500px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.info-section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.data-list{
+  width: 500px;
+}
+
+.data-list ul{
+  margin-top: 2rem;
+}
+
+.data-list ul li{
+  padding-bottom: 20px;
+}
+.img-primary {
+  max-width: 60%;
+}
+/* Footer */
 
 footer{
   background-color: #A0D3D9;
