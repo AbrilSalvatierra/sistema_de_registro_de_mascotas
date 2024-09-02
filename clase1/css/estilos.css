@@ -110,6 +110,7 @@ main h1, main h2 {
   justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .button-primary{
@@ -157,6 +158,18 @@ main h1, main h2 {
 }
 .img-primary {
   max-width: 60%;
+  margin: 1rem;
+}
+
+.img-final{
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+.img-second{
+  max-width: 50%;
+  margin: 3rem 0;
 }
 /* Footer */
 
