@@ -88,9 +88,12 @@ header{
   height: auto;
 }
 
-.background-blue{
-  background-color: #fff6ea;
-  padding-bottom: 2em;
+.background-change{
+  background-color: #fff8f0;
+}
+
+.background-space{
+  padding-bottom: 3rem;
 }
 
 section div{
@@ -102,7 +105,7 @@ main h1, main h2 {
   padding: 2em 0;
   text-align: center;
   color: #010406;
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
 .button-pages{
@@ -156,20 +159,42 @@ main h1, main h2 {
 .data-list ul li{
   padding-bottom: 20px;
 }
+
+.text-final{
+  font-size: 1.2rem;
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .img-primary {
   max-width: 60%;
   margin: 1rem;
 }
 
 .img-final{
-  max-width: 60%;
-  margin: auto;
-  display: flex;
+  width: 250px;
+}
+
+.box-shadow{
+  border-radius: 50%;
+  box-shadow: 0;
+  transition: box-shadow 1s;
+  padding: 2rem;
+  display: block;
+  justify-content: center;
+  width: 350px;
+}
+
+.box-shadow:hover{
+  box-shadow: 0 0 200px 5px #ffc123ad;
+  background-color: #ffc12382;
 }
 
 .img-second{
-  max-width: 50%;
-  margin: 3rem 0;
+  margin: 2rem 0;
+  width: 300px;
 }
 /* Footer */
 
