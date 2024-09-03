@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/formularios.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,53 +46,88 @@
 
     <main>
         <section>
+            <img src="../assets/slim-banner/1.png" alt="Registro de mascotas perdidas" class="main_banner">
+        </section>
+        <section>
             <div>
-                <div>
-                    <img src="" alt="">
+                <h1>Registro de Mascotas Perdidas</h1>
+                <div class="main-container">
+                    <div class="main-card">
+                        <h3>¡No pierdas la esperanza!</h3>
+                        <p> Sabemos lo difícil que es estar lejos de tu compañero de vida. <br>Completa el formulario a continuación para que la información sobre tu mascota esté visible para toda la comunidad.</p>
+                    </div>
+                    <div class="main-card">
+                        <h3>¡Cada detalle cuenta!</h3>
+                        <p>Incluye una descripción clara, fotos recientes, y cualquier dato que pueda ayudar en la búsqueda. <br>Juntos podemos hacer que tu mascota regrese a casa lo antes posible.</p>
+                    </div>
                 </div>
-                <h1>Titulo</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor hic obcaecati sequi qui magnam ipsum, sit porro, recusandae fuga nostrum tempora veritatis sint, non molestias! Harum provident repudiandae nostrum maiores.</p>
             </div>
         </section>
         <section class="form-section">
-            <h1>Registra una Mascota Perdida</h1>
-            <form action="#" method="post">
-                <label for="name">Nombre de la Mascota:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="type">Tipo de Mascota:</label>
-                <select id="type" name="type" required>
-                    <option value="perro">Perro</option>
-                    <option value="gato">Gato</option>
-                </select>
-
-                <label for="breed">Raza:</label>
-                <input type="text" id="breed" name="breed">
-
-                <label for="size">Tamaño:</label>
-                <input type="text" id="size" name="size">
-
-                <label for="color">Color:</label>
-                <input type="text" id="color" name="color">
-
-                <label for="photo">Fotos (minimo 3):</label>
-                <input type="file" id="photo" name="photo">
-
-                <label for="description">Descripción:</label>
-                <textarea id="description" name="description" required></textarea>
-
-                <label for="location">Última Ubicación Vista:</label>
-                <input type="text" id="location" name="location" required>
-
-                <label for="date">Fecha y Hora de la Desaparición:</label>
-                <input type="datetime-local" id="date" name="date" required>
-
-                <label for="contact">Información de Contacto del Dueño:</label>
-                <input type="text" id="contact" name="contact" required>
-
-                <button class="button" type="submit">Registrar Mascota Perdida</button>
-                <button type="submit">Compartir en redes</button>
-            </form>
+            <div>    
+                <form id="formRegistro">
+                    <div class="form-group">
+                        <label for="name">Nombre de la Mascota:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Tipo de Mascota:</label>
+                        <select id="type" name="type" required>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="breed">Raza:</label>
+                        <input type="text" id="breed" name="breed">
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Tamaño:</label>
+                        <select id="size" name="size" required>
+                            <option value="pequeño">Pequeño</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" name="color">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Fotos (mínimo 3):</label>
+                        <input type="file" id="photos" name="photos" accept="image/*" multiple required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descripción:</label>
+                        <textarea id="description" placeholder="Colocar datos sobre manchas particulares, color de ojos, detalles del collar o vestimenta de su" name="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Última Ubicación Vista:</label>
+                        <input type="text" id="location" name="location" required>
+                        <div class="iframe-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13473.768763664046!2d-58.446094500024024!3d-34.6277348369364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1725338601454!5m2!1ses!2sar" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Fecha y Hora de la Desaparición:</label>
+                        <input type="datetime-local" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <h3>Información de Contacto del Dueño</h3>
+                        <label for="reporter-name">Nombre:</label>
+                        <input type="text" id="reporter-name" name="reporter-name" required>
+            
+                        <label for="reporter-phone">Teléfono o Celular:</label>
+                        <input type="tel" id="reporter-phone" name="reporter-phone" required>
+            
+                        <label for="reporter-email">Email:</label>
+                        <input type="email" id="reporter-email" name="reporter-email" required>
+                    </div>
+                    <div class="form-actions">
+                        <button class="button-primary" type="submit">Registrar Mascota Perdida</button>
+                    </div>
+                </form>
+            </div>    
         </section>
     </main>
 
@@ -123,5 +159,10 @@
             <p>&copy; Copyright 2024 Rastro Peludo</p>
         </div>
     </footer>
+
+    <!-- Script Form JS -->
+     <script src="../js/formularioRegistro.js"></script>
+     <!-- SweetAlert -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

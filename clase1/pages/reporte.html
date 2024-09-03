@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/formularios.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,55 +46,84 @@
 
     <main>
         <section>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <h1>Titulo</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor hic obcaecati sequi qui magnam ipsum, sit porro, recusandae fuga nostrum tempora veritatis sint, non molestias! Harum provident repudiandae nostrum maiores.</p>
-            </div>
+            <img src="../assets/slim-banner/2.png" alt="Reporte de mascotas encontradas" class="main_banner">
         </section>
         <section>
-            <form id="report-form">
-                <label for="pet-type">Tipo de Mascota</label>
-                <select id="pet-type" name="pet-type" required>
-                    <option value="perro">Perro</option>
-                    <option value="gato">Gato</option>
-                </select>
-    
-                <label for="pet-breed">Raza</label>
-                <input type="text" id="pet-breed" name="pet-breed" required>
-    
-                <label for="pet-size">Tamaño</label>
-                <input type="text" id="pet-size" name="pet-size" required>
-    
-                <label for="pet-color">Color</label>
-                <input type="text" id="pet-color" name="pet-color" required>
-    
-                <label for="pet-photo">Fotos (minimo 3):</label>
-                <input type="file" id="pet-photo" name="pet-photo" required>
-    
-                <label for="pet-description">Descripción</label>
-                <textarea id="pet-description" name="pet-description" required></textarea>
-    
-                <label for="found-location">Ubicación Encontrada</label>
-                <input type="text" id="found-location" name="found-location" required>
-    
-                <label for="found-date">Fecha y Hora Encontrada</label>
-                <input type="datetime-local" id="found-date" name="found-date" required>
-    
-                <label for="reporter-name">Nombre del Reportante</label>
-                <input type="text" id="reporter-name" name="reporter-name" required>
-    
-                <label for="reporter-phone">Teléfono del Reportante</label>
-                <input type="tel" id="reporter-phone" name="reporter-phone" required>
-    
-                <label for="reporter-email">Email del Reportante</label>
-                <input type="email" id="reporter-email" name="reporter-email" required>
-    
-                <button  class="button" type="submit">Reportar Mascota Encontrada</button>
-                <button type="submit">Compartir en redes</button>
-            </form>
+            <div>
+                <h1>Reporte de Mascotas Encontradas</h1>
+                <div class="main-container">
+                    <div class="main-card">
+                        <h3>¡Gracias por ayudar a reunir a una familia!</h3>
+                        <p>Si has encontrado una mascota, completa el formulario a continuación con la mayor cantidad de detalles posible.</p>
+                    </div>
+                    <div class="main-card">
+                        <h3>Recuerda: cada pequeño dato cuenta.</h3>
+                        <p>La información que proporciones es vital para que podamos conectar a esta mascota con su hogar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <div>    
+                <form id="formReporte">
+                    <div class="form-group">
+                        <label for="type">Tipo de Mascota:</label>
+                        <select id="type" name="type" required>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="breed">Raza:</label>
+                        <input type="text" id="breed" name="breed">
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Tamaño:</label>
+                        <select id="size" name="size" required>
+                            <option value="pequeño">Pequeño</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" name="color">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Fotos (mínimo 3):</label>
+                        <input type="file" id="photos" name="photos" accept="image/*" multiple required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descripción:</label>
+                        <textarea id="description" placeholder="Colocar datos sobre manchas particulares, color de ojos, detalles del collar o vestimenta de su" name="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Ubicación Encontrada:</label>
+                        <input type="text" id="location" name="location" required>
+                        <div class="iframe-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13473.768763664046!2d-58.446094500024024!3d-34.6277348369364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1725338601454!5m2!1ses!2sar" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Fecha y Hora Encontrada:</label>
+                        <input type="datetime-local" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <h3>Información de Contacto del Reportante</h3>
+                        <label for="reporter-name">Nombre:</label>
+                        <input type="text" id="reporter-name" name="reporter-name" required>
+            
+                        <label for="reporter-phone">Teléfono o Celular:</label>
+                        <input type="tel" id="reporter-phone" name="reporter-phone" required>
+            
+                        <label for="reporter-email">Email:</label>
+                        <input type="email" id="reporter-email" name="reporter-email" required>
+                    </div>
+                    <div class="form-actions">
+                        <button class="button-primary" type="submit">Reportar Mascota Encontrada</button>
+                    </div>
+                </form>
+            </div>    
         </section>
     </main>
 
@@ -125,5 +155,10 @@
             <p>&copy; Copyright 2024 Rastro Peludo</p>
         </div>
     </footer>
+
+    <!-- Script Form JS -->
+    <script src="../js/formularioReporte.js"></script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
