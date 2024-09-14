@@ -9,7 +9,7 @@
 
 body{
     background-color: #fcfcfa;
-}
+  }
 
 /* Navbar */
 
@@ -237,12 +237,4 @@ footer{
   background-color: #1C2F40;
   color: #fffff4;
   padding: 1em;
-}
-
-/* Page Nosotros */
-
-.main_banner_us{
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
 }

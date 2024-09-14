@@ -1,0 +1,44 @@
+/* Page Nosotros */
+
+.main_banner_us{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .p-primary-us{
+    margin-bottom: 3em;
+  }
+  
+  .p-secondary-us{
+    padding: 3em;
+    text-align: center;    
+    background-color: #A0D3D9;
+    border-radius: 100px;
+    margin-bottom: 3em;
+    font-size: 1.1em;
+    color: #030305;
+    transition: box-shadow 0.5s;
+  }
+  
+  .p-secondary-us:hover{
+    box-shadow: 0 0 200px 5px #ffc123ad;
+    background-color: #ffc12382;
+    z-index:-1;
+  }
+  
+  .img-section-us{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-primary-us{
+    max-width: 400px;
+    margin: 1rem;
+    border-radius: 3em;
+  }
+  
+  .img-second-us{
+    margin: 1rem;
+    border-radius: 3em;
+  }
