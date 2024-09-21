@@ -190,6 +190,7 @@ main h1, main h2 {
 .box-shadow:hover{
   box-shadow: 0 0 200px 5px #ffc123ad;
   background-color: #ffc12382;
+  width: auto;
 }
 
 .img-second{

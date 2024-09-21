@@ -2,11 +2,13 @@
     background-color: #1C2F40;
     color: #fcfcfa;
     padding: 3em;
+    border-radius: 2em;
 }
 
 .button-contact{
     background-color: #1C2F40;
     color: #fcfcfa;
+    border: none;
 }
 
 .p-primary-contact{
@@ -15,6 +17,63 @@
     font-size: 1.5em;
   }
 
-form div{
-    
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-labels {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.form-field {
+    flex: 1;
+    margin: 0 2rem;
+    padding-bottom: 1.3rem;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-field textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+div h1{
+    text-decoration: #a0d3d9c2 wavy underline;
+    padding-bottom: 1em;
+}
+
+.iframe-map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+iframe{
+    width: 100%;
 }
